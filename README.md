@@ -147,4 +147,4 @@ If possible, always use the most up to date version of Docker, you operating sys
 [MarkusMcNugen/docker-qBittorrentvpn](https://github.com/MarkusMcNugen/docker-qBittorrentvpn)  
 [DyonR/jackettvpn](https://github.com/DyonR/jackettvpn)  
 This projects originates from DyonR/docker-qBittorrentvpn  
-Not forked to to create private repo
+Not forked to create private repo
