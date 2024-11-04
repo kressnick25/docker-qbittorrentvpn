@@ -1,4 +1,4 @@
-FROM fedora:41
+FROM fedora:rawhide
 
 WORKDIR /opt
 
