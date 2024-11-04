@@ -161,6 +161,8 @@ if [ -e /proc/$qbittorrentpid ]; then
 	echo "[INFO] HEALTH_CHECK_AMOUNT is set to ${HEALTH_CHECK_AMOUNT}" | ts '%Y-%m-%d %H:%M:%.S'
 
 	while true; do
+        echo ping -c ${HEALTH_CHECK_AMOUNT} $HOST
+        ping -c ${HEALTH_CHECK_AMOUNT} $HOST
 		# Ping uses both exit codes 1 and 2. Exit code 2 cannot be used for docker health checks, therefore we use this script to catch error code 2
 		ping -c ${HEALTH_CHECK_AMOUNT} $HOST > /dev/null 2>&1
 		STATUS=$?
