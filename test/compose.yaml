@@ -1,0 +1,23 @@
+name: qbittorrent-vpn-test
+
+services:
+  qbittorrentvpn:
+    image: qbittorrentvpn:latest
+    volumes:
+      - '${TEST_CONFIG}:/config:z'
+      - '${TEST_DOWNLOADS}:/downloads:z'
+      - '/dev/net/tun:/dev/net/tun'
+    environment:
+      - VPN_ENABLED=yes
+      - VPN_TYPE=openvpn
+      - VPN_USERNAME=${VPN_USERNAME}
+      - VPN_PASSWORD=${VPN_PASSWORD}
+      - LAN_NETWORK=192.168.1.0/24
+    ports:
+      - '8080:8080'
+    cap_add:
+      - NET_ADMIN
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: unless-stopped
+    privileged: true
