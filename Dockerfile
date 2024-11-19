@@ -1,4 +1,4 @@
-FROM fedora:rawhide
+FROM fedora:41
 
 WORKDIR /opt
 
@@ -8,6 +8,7 @@ RUN mkdir -p /downloads /config/qBittorrent /etc/openvpn /etc/qbittorrent
 # Install dependencies
 RUN dnf install -y \
     dos2unix \
+    ipcalc \
     iptables-nft \
     iptables-legacy \
     openvpn \
@@ -20,6 +21,7 @@ RUN dnf install -y \
     ifconfig \
     ts \
     redhat-lsb \
+    initscripts \
     iproute \
     iputils \
     && dnf clean all
