@@ -8,7 +8,7 @@ Docker container which runs the latest [qBittorrent](https://github.com/qbittorr
 
 # Docker Features
 
--   Base: Fedora Rawhide
+-   Base: Fedora 41
 -   [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 -   IP tables killswitch to prevent IP leaking when VPN connection fails
 -   Configurable UID and GID for config files and /downloads for qBittorrent
