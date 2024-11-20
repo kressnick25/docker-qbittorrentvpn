@@ -2,7 +2,7 @@ name: qbittorrent-vpn-test
 
 services:
   qbittorrentvpn:
-    image: qbittorrentvpn:latest
+    image: qbittorrent-vpn:latest
     volumes:
       - '${TEST_CONFIG}:/config:z'
       - '${TEST_DOWNLOADS}:/downloads:z'

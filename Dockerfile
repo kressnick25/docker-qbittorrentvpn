@@ -1,5 +1,7 @@
 FROM fedora:41
 
+LABEL org.opencontainers.image.source=https://github.com/kressnick25/docker-qbittorrentvpn
+
 WORKDIR /opt
 
 # Make directories
