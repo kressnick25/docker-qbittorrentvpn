@@ -30,16 +30,14 @@ $ docker run  -d \
               --cap-add NET_ADMIN \
               --sysctl "net.ipv4.conf.all.src_valid_mark=1" \
               --restart unless-stopped \
-              dsnumbers/qbittorrentvpn
+              ghcr.io/kressnick25/qbittorrent-vpn:latest
 ```
 
 ## Docker Tags
 
-| Tag                               | Description                                             |
-| --------------------------------- | ------------------------------------------------------- |
-| `dsnumbers/qbittorrentvpn:latest` | The latest version of qBittorrent with libtorrent 2_x_x |
-| `dsnumbers/qbittorrentvpn:v5.0.1` | Version 5.0.1 of qBittorrent with libtorrent 2_x_x      |
-| `dsnumbers/qbittorrentvpn:v4.5.5` | Legacy version of qBittorrent with libtorrent 1_x_x     |
+| Tag                                          | Description                                             |
+| -------------------------------------------- | ------------------------------------------------------- |
+| `ghcr.io/kressnick25/qbittorrent-vpn:latest` | The latest version of qBittorrent with libtorrent 2_x_x |
 
 # Variables, Volumes, and Ports
 
@@ -119,6 +117,7 @@ id <username>
 
 ### Credits:
 
+[ds-exe/docker-qBittorentvpn](https://github.com/ds-exe/docker-qbittorrentvpn)  
 [DyonR/docker-qBittorrentvpn](https://github.com/DyonR/docker-qbittorrentvpn)  
 [MarkusMcNugen/docker-qBittorrentvpn](https://github.com/MarkusMcNugen/docker-qBittorrentvpn)  
 [DyonR/jackettvpn](https://github.com/DyonR/jackettvpn)  
